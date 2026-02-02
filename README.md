@@ -49,29 +49,6 @@ Ziel ist es, dass eingetragene Termine **persistent gespeichert** werden und auc
 * MySQL
 * MySQL Workbench / MySQL Shell
 
----
-
-## Projektstruktur (Beispiel)
-
-```
-Sportferien_2026_API-1_durani_Board_Terminkalender
-│
-├── backend
-│   ├── server.js
-│   ├── routes
-│   ├── controllers
-│   └── db
-│
-├── frontend
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-│
-└── README.md
-```
-
----
-
 ## Funktionalität
 
 * Termine über ein Formular erfassen (Titel, Datum, Beschreibung, Typ)
@@ -110,3 +87,4 @@ Durani
 ## Zeitraum
 
 Sportferien 2026
+
