@@ -1,0 +1,168 @@
+/*
+Author: Anisa Duraj 
+Date: 05.02.2026
+Version: 1.1
+Description: Erweiterte CSS Datei für den Terminkalender Frontend
+*/
+
+/* ===== Body ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ===== Dark Mode ===== */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+/* Dark Mode Inputs */
+body.dark-mode input {
+    background-color: #444;
+    /* dunkleres Feld */
+    color: white;
+    /* Textfarbe im Feld */
+    border: 1px solid #888;
+    /* optional: dezente Umrandung */
+}
+
+body.dark-mode section {
+    background-color: #525252;
+    color: white;
+    /* Text in Section */
+}
+
+body.dark-mode section h2,
+body.dark-mode section h3 {
+    color: rgb(255, 255, 255);
+    /* Überschriften in Sections */
+}
+
+body.dark-mode section li {
+    background-color: #002aa8;
+    /* Listenelemente */
+    color: rgb(255, 255, 255);
+    /* Text in Listenelementen */
+}
+
+body.dark-mode nav {
+    background-color: #000758;
+    color: #ffffff;
+}
+
+body.dark-mode a {
+    color: #87ceeb;
+}
+
+body.dark-mode a:hover {
+    background-color: #2b154d;
+    color: white;
+}
+
+body.dark-mode button {
+    background-color: #5555aa;
+}
+
+body.dark-mode button:hover {
+    background-color: #222266;
+}
+
+
+/* ===== Überschriften ===== */
+h1 {
+    text-align: center;
+}
+
+h2,
+h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* ===== Navigation ===== */
+nav {
+    background-color: #4cafa7;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+/* ===== Allgemeine Links ===== */
+a {
+    text-decoration: none;
+    /* Unterstreichung entfernen */
+    color: #4f4caf;
+    /* Farbe passend zu Buttons/Navigation */
+    font-weight: bold;
+    transition: color 0.3s, background 0.3s;
+    padding: 4px 8px;
+    /* Optional leichter Padding-Effekt */
+    border-radius: 4px;
+}
+
+/* Hover-Effekt für Links */
+a:hover {
+    background-color: #131fcf;
+    /* Grüner Hintergrund beim Hover */
+    color: white;
+    /* Text wird weiß */
+    text-decoration: none;
+}
+
+/* ===== Sections ===== */
+section {
+    background: white;
+    padding: 15px;
+    margin: 7px;
+    /* Abstand rundherum vom Bildschirmrand */
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.38);
+    width: calc(100% - 14px);
+    /* 100% minus 2*7px Abstand */
+    box-sizing: border-box;
+    /* Padding & Border werden in width eingerechnet */
+}
+
+/* ===== Inputs ===== */
+input {
+    display: block;
+    margin: 5px 0;
+    padding: 8px;
+    width: calc(100% - 20px);
+    /* passt sich Section-Breite an */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ===== Buttons ===== */
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4c56af;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #091e59;
+}
+
+/* ===== Listen (User / Event) ===== */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 4px;
+}

@@ -1,0 +1,42 @@
+<!--
+Author: Anisa Duraj 
+Date: 05.02.2026
+Version: 1.0
+Description: HTML Seite zum Anzeigen und erstellen von den Terminen im Terminkalender
+-->
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Terminkalender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="user.html">User</a>
+        <a href="updateEvents.html">Termine</a>
+        <a href="aboume.html">About me</a>
+        <button id="toggle-mode">Dark Mode</button>
+        <h1>Terminkalender</h1>
+    </nav>
+    <!-- Events anzeigen -->
+    <section>
+        <h2>Alle Termine</h2>
+        <button onclick="loadEvents()">Termine laden</button>
+        <ul id="eventList"></ul>
+    </section>
+
+    <section>
+        <h2>Alle User</h2>
+        <button onclick="loadUsers()">User laden</button>
+        <ul id="userList"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!--
+Author: Anisa Duraj 
+Date: 05.02.2026
+Version: 1.0 
+Description: HTML Seite zum Anzeigen aller User im Terminkalender
+-->
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Terminkalender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="user.html">User</a>
+        <a href="updateEvents.html">Termine</a>
+        <a href="aboume.html">About me</a>
+        <button id="toggle-mode">Dark Mode</button>
+        <h1>Terminkalender</h1>
+    </nav>
+
+        <section>
+            <h2>Alle User</h2>
+            <button onclick="loadUsers()">User laden</button>
+            <ul id="userList"></ul>
+        </section>
+
+        <section>
+            <h2>User löschen</h2>
+            <input type="number" id="user_id_delete" placeholder="User-ID">
+            <button onclick="deleteUser()">User löschen</button>
+        </section>
+
+        <!-- User erstellen -->
+        <section>
+            <h2>User erstellen</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="createUser()">User anlegen</button>
+        </section>
+        <section>
+            <h2>User aktualisieren</h2>
+
+            <input type="number" id="user_id" placeholder="User ID">
+            <input type="text" id="new_username" placeholder="Neuer Username">
+            <input type="password" id="new_password" placeholder="Neues Passwort">
+
+            <button onclick="updateUser()">User aktualisieren</button>
+        </section>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
